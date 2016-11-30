@@ -1,0 +1,63 @@
+
+
+CREATE TABLE "Eleve"(
+nom VARCHAR(50),
+Prenom VARCHAR(50),
+mail VARCHAR(50),
+);
+
+CREATE TABLE "Promotion"(
+nom VARCHAR(50),
+dateDebut DATE,
+dateFin DATE,
+);
+
+CREATE TABLE "Formation"(
+nom VARCHAR(50),
+nbHeuresTotal NUMERIC(4,1),
+);
+
+CREATE TABLE "Formateur" (
+nom VARCHAR(50),
+prenom VARCHAR(50),
+mail VARCHAR(50),
+telephone VARCHAR(10),
+);
+
+CREATE TABLE "Matiere" (
+nom VARCHAR(50)
+);
+
+CREATE TABLE "Salle"(
+nom VARCHAR(50),
+capacite INTEGER
+);
+
+CREATE TABLE "Session" (
+dateDebut DATETIME,
+dateFin DATETIME
+);
+
+CREATE TABLE "EmploiDuTemps" (
+dateDebut DATETIME,
+dateFin DATETIME,
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
