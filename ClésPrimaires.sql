@@ -1,0 +1,86 @@
+
+
+CREATE TABLE "Eleve"(
+nom VARCHAR(50),
+Prenom VARCHAR(50),
+mail VARCHAR(50),
+);
+--ALTER TABLE [Eleve] ADD id INTEGER IDENTITY;                        DEJA EXECUTE
+--ALTER TABLE [Eleve] ADD CONSTRAINT pk_EleveMail PRIMARY KEY(id);
+
+
+
+CREATE TABLE "Promotion"(
+nom VARCHAR(50),
+dateDebut DATE,
+dateFin DATE,
+);
+--ALTER TABLE [Promotion] ADD id INTEGER IDENTITY NOT NULL;
+--ALTER TABLE [Promotion] ADD CONSTRAINT pk_PromotionId PRIMARY KEY(id);
+
+
+CREATE TABLE "Formation"(
+nom VARCHAR(50),
+nbHeuresTotal NUMERIC(4,1),
+);
+--ALTER TABLE [Formation] ADD id INTEGER IDENTITY NOT NULL;
+--ALTER TABLE [Formation] ADD CONSTRAINT pk_FormationId PRIMARY KEY(id);
+
+
+CREATE TABLE "Formateur" (
+nom VARCHAR(50),
+prenom VARCHAR(50),
+mail VARCHAR(50),
+telephone VARCHAR(10),
+);
+--ALTER TABLE [Formateur] ADD id INTEGER IDENTITY NOT NULL;
+--ALTER TABLE [Formateur] ADD CONSTRAINT pk_FormateurId PRIMARY KEY(id);
+
+
+CREATE TABLE "Matiere" (
+nom VARCHAR(50)
+);
+--ALTER TABLE [Matiere] ADD id INTEGER IDENTITY NOT NULL;
+--ALTER TABLE [Matiere] ADD CONSTRAINT pk_MatiereId PRIMARY KEY(id);
+
+
+CREATE TABLE "Salle"(
+nom VARCHAR(50),
+capacite INTEGER
+);
+--ALTER TABLE [Salle] ADD id INTEGER IDENTITY NOT NULL;
+--ALTER TABLE [Salle] ADD CONSTRAINT pk_SalleId PRIMARY KEY(id);
+
+
+CREATE TABLE "Session" (
+dateDebut DATETIME,
+dateFin DATETIME
+);
+--ALTER TABLE [Session] ADD id INTEGER IDENTITY NOT NULL;
+--ALTER TABLE [Session] ADD CONSTRAINT pk_SessionId PRIMARY KEY(id);
+
+
+CREATE TABLE "EmploiDuTemps" (
+dateDebut DATETIME,
+dateFin DATETIME,
+);
+--ALTER TABLE [EmploiDuTemps] ADD id INTEGER IDENTITY NOT NULL;
+--ALTER TABLE [EmploiDuTemps] ADD CONSTRAINT pk_EmploiDuTempsId PRIMARY KEY(id);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
